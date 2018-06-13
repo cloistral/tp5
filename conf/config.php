@@ -9,6 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+
 return [
     // +----------------------------------------------------------------------
     // | 应用设置
@@ -34,8 +35,6 @@ return [
     'default_ajax_return'    => 'json',
     // 默认JSONP格式返回的处理方法
     'default_jsonp_handler'  => 'jsonpReturn',
-    // 默认JSONP处理方法
-    'var_jsonp_handler'      => 'callback',
     // 默认时区
     'default_timezone'       => 'PRC',
     // 是否开启多语言
@@ -44,10 +43,7 @@ return [
     'default_filter'         => '',
     // 默认语言
     'default_lang'           => 'zh-cn',
-    // 应用类库后缀
-    'class_suffix'           => false,
-    // 控制器类后缀
-    'controller_suffix'      => false,
+    
 
     // +----------------------------------------------------------------------
     // | 模块设置
@@ -139,30 +135,6 @@ return [
         // 标签库标签结束标记
         'taglib_end'   => '}',
     ],
-
-    // 视图输出字符串内容替换
-    'view_replace_str'       => [],
-    // 默认跳转页面对应的模板文件
-    'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
-    'dispatch_error_tmpl'    => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
-
-    // +----------------------------------------------------------------------
-    // | 异常及错误设置
-    // +----------------------------------------------------------------------
-
-    // 异常页面的模板文件
-    'exception_tmpl'         => THINK_PATH . 'tpl' . DS . 'think_exception.tpl',
-
-    // 错误显示信息,非调试模式有效
-    'error_message'          => '页面错误！请稍后再试～',
-    // 显示错误信息
-    'show_error_msg'         => false,
-    // 异常处理handle类 留空使用 \think\exception\Handle
-    'exception_handle'       => '',
-
-    // +----------------------------------------------------------------------
-    // | 日志设置
-    // +----------------------------------------------------------------------
 
     'log'                    => [
         // 日志记录方式，内置 file socket 支持扩展
